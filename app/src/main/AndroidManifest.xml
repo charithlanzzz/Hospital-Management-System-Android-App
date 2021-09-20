@@ -10,18 +10,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mad_mini_project">
         <activity
+            android:name=".Patient"
+            android:exported="true" />
+        <activity
+            android:name=".Drugs"
+            android:exported="true" />
+        <activity
+            android:name=".Doctors"
+            android:exported="true" />
+        <activity
+            android:name=".Home"
+            android:exported="true" />
+        <activity
+            android:name=".Menu_page"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityPatient"
+            android:exported="true"
+            android:parentActivityName=".Patient"/>
+        <activity
             android:name=".Total"
             android:exported="true" />
         <activity
             android:name=".UpdateActivity"
             android:exported="true"
             android:label="Update Activity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivityPatient" />
         <activity
             android:name=".AddActivity"
             android:exported="true"
             android:label="Add Patient"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivityPatient" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
