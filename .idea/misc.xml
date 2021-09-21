@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/Mad_mini_project/app/src/main/res/layout/activity_add_drugs.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Mad_mini_project/app/src/main/res/layout/activity_home_drugs.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Mad_mini_project/app/src/main/res/layout/activity_main.xml" value="0.4083333333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Mad_mini_project/app/src/main/res/layout/activity_update_drugs.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Mad_mini_project/app/src/main/res/layout/my_row.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

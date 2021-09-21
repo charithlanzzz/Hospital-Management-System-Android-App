@@ -10,8 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mad_mini_project">
         <activity
+            android:name=".UpdateDrugsActivity"
+            android:exported="true"
+            android:label="Back to Drug List"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddDrugsActivity"
+            android:exported="true"
+            android:label="Back to Drug List"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="Drugs Library">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
