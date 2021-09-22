@@ -15,14 +15,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+public class custom_adapter extends RecyclerView.Adapter<custom_adapter.MyViewHolder> {
     private Context context;
     Activity activity;
     private ArrayList drugId, etNameInsert, etDoseInsert, etDescriptionInsert, etQuantityInsert;
 
     int position;
 
-    CustomAdapter(Activity activity, Context context, ArrayList drugId, ArrayList etNameInsert, ArrayList etDoseInsert, ArrayList etDescriptionInsert, ArrayList etQuantityInsert){
+    custom_adapter(Activity activity, Context context, ArrayList drugId, ArrayList etNameInsert, ArrayList etDoseInsert, ArrayList etDescriptionInsert, ArrayList etQuantityInsert){
         this.activity = activity;
         this.context = context;
         this.drugId = drugId;

@@ -41,7 +41,7 @@ public class UpdateDrugsActivity extends AppCompatActivity {
 
         btnUpdate_update.setOnClickListener((view)  -> {
 
-                MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateDrugsActivity.this);
+                DBHelper myDB = new DBHelper(UpdateDrugsActivity.this);
                 name = etNameInsert.getText().toString().trim();
                 dose = etDoseInsert.getText().toString().trim();
                 description = etDescriptionInsert.getText().toString().trim();
@@ -90,7 +90,7 @@ public class UpdateDrugsActivity extends AppCompatActivity {
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateDrugsActivity.this);
+                DBHelper myDB = new DBHelper(UpdateDrugsActivity.this);
                 myDB.deleteOneRow(id);
                 finish();
             }

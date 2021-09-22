@@ -15,14 +15,14 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class DrugListActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     FloatingActionButton add_button;
 
-    MyDatabaseHelper myDB;
+    DBHelper myDB;
     ArrayList<String> drugId, etNameInsert, etDoseInsert, etDescriptionInsert, etQuantityInsert;
-    CustomAdapter customAdapter;
+    custom_adapter customAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, AddDrugsActivity.class);
+                Intent intent = new Intent(DrugListActivity.this, AddDrugsActivity.class);
                 startActivity(intent);
             }
         });
-        myDB = new MyDatabaseHelper(MainActivity.this);
+        myDB = new DBHelper(DrugListActivity.this);
 
         drugId = new ArrayList<>();
         etNameInsert = new ArrayList<>();
@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
         storeDataInArrays();
 
-        customAdapter = new CustomAdapter(MainActivity.this, MainActivity.this, drugId, etNameInsert,etDoseInsert, etDescriptionInsert, etQuantityInsert);
+        customAdapter = new custom_adapter(DrugListActivity.this, DrugListActivity.this, drugId, etNameInsert,etDoseInsert, etDescriptionInsert, etQuantityInsert);
         recyclerView.setAdapter(customAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(DrugListActivity.this));
     }
 
     @Override

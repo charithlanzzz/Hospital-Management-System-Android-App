@@ -13,14 +13,14 @@
             android:name=".UpdateDrugsActivity"
             android:exported="true"
             android:label="Back to Drug List"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".DrugListActivity" />
         <activity
             android:name=".AddDrugsActivity"
             android:exported="true"
             android:label="Back to Drug List"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".DrugListActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".DrugListActivity"
             android:exported="true"
             android:label="Drugs Library">
             <intent-filter>

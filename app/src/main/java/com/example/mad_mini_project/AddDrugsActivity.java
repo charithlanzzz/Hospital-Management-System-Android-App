@@ -2,7 +2,6 @@ package com.example.mad_mini_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,7 +28,7 @@ public class AddDrugsActivity extends AppCompatActivity {
         btnAddInsert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(AddDrugsActivity.this);
+                DBHelper myDB = new DBHelper(AddDrugsActivity.this);
                 myDB.addDrugs(etNameInsert.getText().toString().trim(),
                         etDoseInsert.getText().toString().trim(),
                         etDescriptionInsert.getText().toString().trim(),
