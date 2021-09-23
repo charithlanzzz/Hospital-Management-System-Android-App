@@ -49,7 +49,9 @@ public class DrugListActivity extends AppCompatActivity {
 
         storeDataInArrays();
 
-        customAdapter = new custom_adapter(DrugListActivity.this, DrugListActivity.this, drugId, etNameInsert,etDoseInsert, etDescriptionInsert, etQuantityInsert);
+        customAdapter = new custom_adapter(DrugListActivity.this, DrugListActivity.this,
+                                            drugId, etNameInsert,etDoseInsert, etDescriptionInsert, etQuantityInsert);
+
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(DrugListActivity.this));
     }
