@@ -16,8 +16,11 @@
         android:scrollbarSize="5dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/addmore"
         android:layout_width="match_parent"
         android:layout_height="84dp"
-        android:text="Button" />
+        android:backgroundTint="#0FC5B4"
+        android:text="Add"
+        android:textColor="#F8F5F5"
+        android:textSize="24sp" />
 </LinearLayout>
