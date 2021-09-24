@@ -68,10 +68,6 @@ public class MainActivityPatient extends AppCompatActivity {
         ca = new customAdapter(MainActivityPatient.this, this, p_id, p_name, p_contact, p_ward);
         recyclerView.setAdapter(ca);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivityPatient.this));
-
-
-
-
     }
 
     @Override
