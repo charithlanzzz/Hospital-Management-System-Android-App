@@ -10,6 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mad_mini_project">
         <activity
+            android:name=".viewdoctor"
+            android:exported="true"
+            android:label="All the doctors"
+            android:parentActivityName=".Doctors"/>
+        <activity
+            android:name=".MainActivityDoctor"
+            android:exported="true" />
+        <activity
+            android:name=".editdoctor"
+            android:exported="true" />
+        <activity
+            android:name=".UpdateDrugsActivity"
+            android:exported="true"
+            android:label="Add Drugs"
+            android:parentActivityName=".DrugListActivity" />
+        <activity
+            android:name=".DrugListActivity"
+            android:exported="true"
+            android:label="Drugs details"
+            android:parentActivityName=".Drugs" />
+        <activity
+            android:name=".AddDrugsActivity"
+            android:exported="true"
+            android:label="Add Drugs"
+            android:parentActivityName=".DrugListActivity" />
+        <activity
             android:name=".Patient"
             android:exported="true" />
         <activity
@@ -27,7 +53,7 @@
         <activity
             android:name=".MainActivityPatient"
             android:exported="true"
-            android:parentActivityName=".Patient"/>
+            android:parentActivityName=".Patient" />
         <activity
             android:name=".Total"
             android:exported="true" />

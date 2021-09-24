@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="1dp"
+    tools:context=".editdoctor">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/baloo"
+        android:padding="10dp"
+        android:text="Update Doctor Details"
+        android:textColor="#109595"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="202dp"
+        android:layout_height="161dp"
+        android:layout_marginBottom="20dp"
+        android:background="#2F57A8"
+        android:backgroundTint="#C9BCDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/update" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/baloo"
+            android:text="ID: "
+            android:textColor="@color/teal_700"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/baloo"
+            android:text="Name: "
+            android:textColor="@color/teal_700"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/baloo"
+            android:text="Specialization: "
+            android:textColor="@color/teal_700"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/specialization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:textAlignment="center"
+            android:textColor="#040303"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/baloo"
+            android:text="Contact No: "
+            android:textColor="@color/teal_700"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/ContactNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:textAlignment="center"
+            android:textColor="#090808"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="64dp">
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:autoText="true"
+            android:background="@color/teal_700"
+            android:fontFamily="@font/baloo"
+            android:text="Update"
+            android:textColor="#FDFCFC"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/bt2"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="17dp"
+            android:background="#3F51B5"
+            android:fontFamily="@font/baloo"
+            android:text="Delete"
+            android:textColor="#FBF9F9"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt3"
+            app:layout_constraintStart_toEndOf="@+id/bt1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="#1C2A88"
+            android:fontFamily="@font/baloo"
+            android:text="View"
+            android:textColor="#FAF5F5"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/bt2"
+            app:layout_constraintStart_toEndOf="@+id/bt2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>

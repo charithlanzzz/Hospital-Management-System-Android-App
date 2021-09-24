@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivityDoctor">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/baloo"
+            android:text="Create Doctor"
+            android:textColor="#168585"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="205dp"
+        android:layout_height="194dp"
+        android:background="#3F84A5"
+        android:backgroundTint="#BCBFD3"
+        app:srcCompat="@drawable/doctor" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/baloo"
+            android:text="Name: "
+            android:textColor="@color/teal_700"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:hint="Robbert"
+            android:textAlignment="center"
+            android:textColor="#070707"
+            android:textColorHint="#837E7E"
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/baloo"
+            android:text="Specialization: "
+            android:textColor="@color/teal_700"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/specialization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:hint="Cardiologist"
+            android:textAlignment="center"
+            android:textColor="#040303"
+            android:textColorHint="#716E6E"
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/baloo"
+            android:text="Contact No: "
+            android:textColor="@color/teal_700"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ContactNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:hint="07xxxxxxxx"
+            android:textAlignment="center"
+            android:textColor="#090808"
+            android:textColorHint="#7E7979"
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="202dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:backgroundTint="#14BDAD"
+            android:fontFamily="@font/baloo"
+            android:text="Add"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="#3F51B5"
+            android:fontFamily="@font/baloo"
+            android:text="View"
+            android:textColor="#F8F4F4"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>
