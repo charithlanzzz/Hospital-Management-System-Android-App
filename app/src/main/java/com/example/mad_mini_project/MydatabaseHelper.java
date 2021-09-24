@@ -42,9 +42,7 @@ class MydatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-        onCreate(db);
-
-    }
+        onCreate(db); }
 
     void addPatient(String name, String contact, int ward) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -54,7 +52,6 @@ class MydatabaseHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_WARD, ward);
 
         long result = db.insert(TABLE_NAME, null, cv);
-
         if (result == -1) {
             Toast.makeText(context, "Failed to insert!!", Toast.LENGTH_SHORT).show();
         } else {
