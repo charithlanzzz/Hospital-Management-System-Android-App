@@ -84,8 +84,8 @@
     <Button
         android:id="@+id/btnUpdate_update"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
         android:text="UPDATE"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -96,7 +96,7 @@
     <Button
         android:id="@+id/btnDelete_update"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:text="DELETE"
         android:textColor="#EC5449"
