@@ -9,18 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mad_mini_project">
-        <activity
-<<<<<<< HEAD
-            android:name=".viewdoctor"
-            android:exported="true"
-            android:label="All the doctors"
-            android:parentActivityName=".Doctors"/>
-        <activity
-            android:name=".MainActivityDoctor"
-            android:exported="true" />
-        <activity
-            android:name=".editdoctor"
-            android:exported="true" />
+        
         <activity
             android:name=".UpdateDrugsActivity"
             android:exported="true"
@@ -42,9 +31,7 @@
         <activity
             android:name=".Drugs"
             android:exported="true" />
-        <activity
-            android:name=".Doctors"
-            android:exported="true" />
+        
         <activity
             android:name=".Home"
             android:exported="true" />
