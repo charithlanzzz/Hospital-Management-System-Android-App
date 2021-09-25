@@ -31,9 +31,7 @@
         <activity
             android:name=".Drugs"
             android:exported="true" />
-        <activity
-            android:name=".Doctors"
-            android:exported="true" />
+        
         <activity
             android:name=".Home"
             android:exported="true" />
@@ -68,9 +66,7 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+        
     </application>
 
 </manifest>
