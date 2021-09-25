@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Mad_mini_project</string>
+    <string name="name">name</string>
+    <string name="dose">dose</string>
+    <string name="description">description</string>
+    <string name="Quantity">Quantity</string>
 </resources>
