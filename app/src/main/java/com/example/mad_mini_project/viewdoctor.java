@@ -27,7 +27,7 @@ public class viewdoctor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viewdoctor);
 
-
+//fghfgjfgjgfhj
         SQLiteDatabase db = openOrCreateDatabase("hospitalDB", Context.MODE_PRIVATE, null);
 
         lst1 = findViewById(R.id.lst1);
