@@ -88,7 +88,7 @@
         android:layout_marginTop="20dp"
         android:background="#F8F6F5"
         android:text="ADD"
-        android:textColor="#78909C"
+        android:textColor="#34434A"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
