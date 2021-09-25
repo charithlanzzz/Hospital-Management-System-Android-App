@@ -17,6 +17,7 @@
         android:layout_width="397dp"
         android:layout_height="524dp"
         android:layout_marginTop="140dp"
+        android:layout_marginEnd="14dp"
         android:background="#C7ABCC"
         android:baselineAligned="false"
         android:divider="@color/white"
@@ -25,8 +26,18 @@
         android:scrollbarSize="10dp"
         android:textAlignment="center"
         android:textDirection="firstStrong"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </ListView>
 
     <Button
         android:id="@+id/addmore"

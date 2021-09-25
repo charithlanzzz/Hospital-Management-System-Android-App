@@ -20,7 +20,7 @@ public class UpdateDrugsActivity extends AppCompatActivity {
     Button btnUpdate_update, btnDelete_update;
 
     String id, title, name, dose, description, quantity;
-
+//fghfghrth
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

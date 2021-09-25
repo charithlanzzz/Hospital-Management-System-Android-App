@@ -22,7 +22,7 @@ public class Menu_page extends AppCompatActivity {
                 openDoctors();
             }
         });
-
+//fthjyjytyjkyukjuyk
         TextView pat_btn = (TextView) findViewById(R.id.pat_btn);
         pat_btn.setOnClickListener(new View.OnClickListener() {
             @Override
