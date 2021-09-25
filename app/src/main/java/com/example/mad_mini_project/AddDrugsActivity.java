@@ -28,7 +28,11 @@ public class AddDrugsActivity extends AppCompatActivity {
         btnAddInsert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+<<<<<<< HEAD
                 MydatabaseHelper myDB = new MydatabaseHelper(AddDrugsActivity.this);
+=======
+                DBHelper myDB = new DBHelper(AddDrugsActivity.this);
+>>>>>>> drug_management
                 myDB.addDrugs(etNameInsert.getText().toString().trim(),
                         etDoseInsert.getText().toString().trim(),
                         etDescriptionInsert.getText().toString().trim(),

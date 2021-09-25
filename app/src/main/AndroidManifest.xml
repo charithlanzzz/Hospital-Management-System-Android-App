@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mad_mini_project">
         <activity
+<<<<<<< HEAD
             android:name=".viewdoctor"
             android:exported="true"
             android:label="All the doctors"
@@ -71,6 +72,21 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="Patients Details">
+=======
+            android:name=".UpdateDrugsActivity"
+            android:exported="true"
+            android:label="Back to Drug List"
+            android:parentActivityName=".DrugListActivity" />
+        <activity
+            android:name=".AddDrugsActivity"
+            android:exported="true"
+            android:label="Back to Drug List"
+            android:parentActivityName=".DrugListActivity" />
+        <activity
+            android:name=".DrugListActivity"
+            android:exported="true"
+            android:label="Drugs Library">
+>>>>>>> drug_management
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/2nd year 2nd semester/MAD/Mini project/Mad_mini_project/app/src/main/res/layout/activity_add.xml" value="0.25" />
         <entry key="..\:/2nd year 2nd semester/MAD/Mini project/Mad_mini_project/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/2nd year 2nd semester/MAD/Mini project/Mad_mini_project/app/src/main/res/layout/activity_total.xml" value="0.19010416666666666" />
@@ -32,6 +33,13 @@
         <entry key="..\:/2ndYear2ndSemester/MAD/Mini project/Mad_mini_project/app/src/main/res/layout/activity_viewdoctor.xml" value="0.20416666666666666" />
         <entry key="..\:/2ndYear2ndSemester/MAD/Mini project/Mad_mini_project/app/src/main/res/layout/header.xml" value="0.20416666666666666" />
         <entry key="..\:/2ndYear2ndSemester/MAD/Mini project/Mad_mini_project/app/src/main/res/layout/my_row.xml" value="0.20416666666666666" />
+=======
+        <entry key="..\:/Users/user/AndroidStudioProjects/Mad_mini_project/app/src/main/res/layout/activity_add_drugs.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Mad_mini_project/app/src/main/res/layout/activity_home_drugs.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Mad_mini_project/app/src/main/res/layout/activity_main.xml" value="0.4083333333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Mad_mini_project/app/src/main/res/layout/activity_update_drugs.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Mad_mini_project/app/src/main/res/layout/my_row.xml" value="0.75" />
+>>>>>>> drug_management
       </map>
     </option>
   </component>
