@@ -41,21 +41,12 @@ public class UpdateDrugsActivity extends AppCompatActivity {
 
         btnUpdate_update.setOnClickListener((view)  -> {
 
-<<<<<<< HEAD
             MydatabaseHelper myDB = new MydatabaseHelper(UpdateDrugsActivity.this);
             name = etNameInsert.getText().toString().trim();
             dose = etDoseInsert.getText().toString().trim();
             description = etDescriptionInsert.getText().toString().trim();
             quantity = etQuantityInsert.getText().toString().trim();
             myDB.updateDataD(id, name, dose, description, quantity);
-=======
-                DBHelper myDB = new DBHelper(UpdateDrugsActivity.this);
-                name = etNameInsert.getText().toString().trim();
-                dose = etDoseInsert.getText().toString().trim();
-                description = etDescriptionInsert.getText().toString().trim();
-                quantity = etQuantityInsert.getText().toString().trim();
-                myDB.updateData(id, name, dose, description, quantity);
->>>>>>> drug_management
 
         });
 
@@ -69,23 +60,14 @@ public class UpdateDrugsActivity extends AppCompatActivity {
     }
 
     void getAndSetIntentData(){
-<<<<<<< HEAD
         if(getIntent().hasExtra("id") && getIntent().hasExtra("name") && getIntent().hasExtra("dose") &&
                 getIntent().hasExtra("description") && getIntent().hasExtra("quantity")){
-=======
-       if(getIntent().hasExtra("id") && getIntent().hasExtra("name") && getIntent().hasExtra("dose") &&
-               getIntent().hasExtra("description") && getIntent().hasExtra("quantity")){
->>>>>>> drug_management
             //Getting data from Intent
             id = getIntent().getStringExtra("id");
             name = getIntent().getStringExtra("name");
             dose = getIntent().getStringExtra("dose");
             description = getIntent().getStringExtra("description");
-<<<<<<< HEAD
             quantity = getIntent().getStringExtra("quantity");
-=======
-           quantity = getIntent().getStringExtra("quantity");
->>>>>>> drug_management
 
             //Setting Intent Data
             etNameInsert.setText(name);
@@ -108,13 +90,8 @@ public class UpdateDrugsActivity extends AppCompatActivity {
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-<<<<<<< HEAD
                 MydatabaseHelper myDB = new MydatabaseHelper(UpdateDrugsActivity.this);
                 myDB.deleteOneRawD(id);
-=======
-                DBHelper myDB = new DBHelper(UpdateDrugsActivity.this);
-                myDB.deleteOneRow(id);
->>>>>>> drug_management
                 finish();
             }
         });

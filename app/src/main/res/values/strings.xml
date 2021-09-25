@@ -1,17 +1,7 @@
 <resources>
     <string name="app_name">Mad_mini_project</string>
-<<<<<<< HEAD
     <string name="name">name</string>
     <string name="dose">dose</string>
     <string name="description">description</string>
     <string name="Quantity">Quantity</string>
-=======
-    <string name="dose">Dose (ex:100mg)</string>
-    <string name="description">Description</string>
-    <string name="amount">Amount</string>
-    <string name="name">Name</string>
-    <string name="Quantity">quantity</string>
-
-
->>>>>>> drug_management
 </resources>

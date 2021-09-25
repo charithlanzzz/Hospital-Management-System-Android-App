@@ -20,11 +20,7 @@ public class DrugListActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     FloatingActionButton add_button;
 
-<<<<<<< HEAD
     MydatabaseHelper myDB;
-=======
-    DBHelper myDB;
->>>>>>> drug_management
     ArrayList<String> drugId, etNameInsert, etDoseInsert, etDescriptionInsert, etQuantityInsert;
     custom_adapter customAdapter;
 
@@ -43,11 +39,7 @@ public class DrugListActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-<<<<<<< HEAD
         myDB = new MydatabaseHelper(DrugListActivity.this);
-=======
-        myDB = new DBHelper(DrugListActivity.this);
->>>>>>> drug_management
 
         drugId = new ArrayList<>();
         etNameInsert = new ArrayList<>();
@@ -58,11 +50,7 @@ public class DrugListActivity extends AppCompatActivity {
         storeDataInArrays();
 
         customAdapter = new custom_adapter(DrugListActivity.this, DrugListActivity.this,
-<<<<<<< HEAD
                 drugId, etNameInsert,etDoseInsert, etDescriptionInsert, etQuantityInsert);
-=======
-                                            drugId, etNameInsert,etDoseInsert, etDescriptionInsert, etQuantityInsert);
->>>>>>> drug_management
 
         recyclerView.setAdapter(customAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(DrugListActivity.this));
@@ -77,11 +65,7 @@ public class DrugListActivity extends AppCompatActivity {
     }
 
     void storeDataInArrays() {
-<<<<<<< HEAD
         Cursor cursor = myDB.readAllDataD();
-=======
-        Cursor cursor = myDB.readAllData();
->>>>>>> drug_management
         if (cursor.getCount() == 0) {
             Toast.makeText(this, "No Data", Toast.LENGTH_SHORT).show();
         } else {
