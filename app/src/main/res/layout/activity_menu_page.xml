@@ -20,8 +20,8 @@
                 android:layout_width="78dp"
                 android:layout_height="78dp"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/ic_baseline_local_hospital_24"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_baseline_local_hospital_24" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -43,15 +43,20 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="533dp"
+            android:layout_height="669dp"
             android:background="#303F9F">
 
             <Button
                 android:id="@+id/doc_btn"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
-                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="54dp"
                 android:layout_marginTop="50dp"
+                android:layout_marginEnd="57dp"
+                android:layout_marginBottom="484dp"
                 android:backgroundTint="#BA68C8"
                 android:fontFamily="@font/baloo"
                 android:text="Doctor Management"
@@ -62,8 +67,13 @@
                 android:id="@+id/pat_btn"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
-                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="53dp"
                 android:layout_marginTop="150dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="383dp"
                 android:backgroundTint="@color/teal_200"
                 android:fontFamily="@font/baloo"
                 android:text="Patient Management"
@@ -74,9 +84,14 @@
                 android:id="@+id/drugs_btn"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
-                android:layout_centerHorizontal="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="53dp"
                 android:layout_marginTop="250dp"
-                android:backgroundTint="@color/design_default_color_on_primary"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="281dp"
+                android:backgroundTint="#FBFBFA"
                 android:fontFamily="@font/baloo"
                 android:text="Drugs Management"
                 android:textColor="@color/black"
@@ -87,8 +102,10 @@
                 android:layout_width="300dp"
                 android:layout_height="70dp"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
                 android:layout_marginTop="380dp"
-                android:layout_marginEnd="55dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="96dp"
                 android:backgroundTint="#FFCA28"
                 android:fontFamily="@font/baloo"
                 android:text="Back to Home"
@@ -97,7 +114,6 @@
 
 
         </RelativeLayout>
-
 
 
     </LinearLayout>

@@ -14,9 +14,9 @@
 
     <ListView
         android:id="@+id/lst1"
-        android:layout_width="397dp"
-        android:layout_height="524dp"
-        android:layout_marginTop="140dp"
+        android:layout_width="407dp"
+        android:layout_height="534dp"
+        android:layout_marginTop="108dp"
         android:background="#C7ABCC"
         android:baselineAligned="false"
         android:divider="@color/white"
@@ -25,15 +25,18 @@
         android:scrollbarSize="10dp"
         android:textAlignment="center"
         android:textDirection="firstStrong"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <Button
         android:id="@+id/addmore"
         android:layout_width="201dp"
         android:layout_height="73dp"
-        android:layout_marginBottom="60dp"
-        android:backgroundTint="#796A7C"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#7D6181"
         android:fontFamily="@font/baloo"
         android:text="Add"
         android:textColor="#FBFBFB"
@@ -51,7 +54,7 @@
         android:fontFamily="@font/baloo"
         android:paddingTop="15dp"
         android:text="   View Doctor Details"
-        android:textColor="#139E9C"
+        android:textColor="#0A7E7C"
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/lst1"
         app:layout_constraintEnd_toEndOf="parent"

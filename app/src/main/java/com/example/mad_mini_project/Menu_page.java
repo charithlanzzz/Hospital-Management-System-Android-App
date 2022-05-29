@@ -22,7 +22,7 @@ public class Menu_page extends AppCompatActivity {
                 openDoctors();
             }
         });
-//fthjyjytyjkyukjuyk
+
         TextView pat_btn = (TextView) findViewById(R.id.pat_btn);
         pat_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +53,8 @@ public class Menu_page extends AppCompatActivity {
         Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
+
+
     public  void openDrugs(){
         Intent intent = new Intent(this, Drugs.class);
         startActivity(intent);

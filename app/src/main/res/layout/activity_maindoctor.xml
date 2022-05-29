@@ -64,7 +64,8 @@
             android:textAlignment="center"
             android:textColor="#070707"
             android:textColorHint="#837E7E"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
 
@@ -97,7 +98,8 @@
             android:textAlignment="center"
             android:textColor="#040303"
             android:textColorHint="#716E6E"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -129,23 +131,23 @@
             android:textAlignment="center"
             android:textColor="#090808"
             android:textColorHint="#7E7979"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="202dp"
+        android:layout_height="166dp"
         android:gravity="center"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/bt1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="@color/black"
             android:backgroundTint="#14BDAD"
             android:fontFamily="@font/baloo"
             android:text="Add"
@@ -155,15 +157,24 @@
         <Button
             android:id="@+id/bt2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="63dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:background="#3F51B5"
+            android:backgroundTint="#3F51B5"
             android:fontFamily="@font/baloo"
             android:text="View"
             android:textColor="#F8F4F4"
             android:textSize="20sp" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="249dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#264761"
+        android:fontFamily="@font/baloo"
+        android:text="Back to Home" />
 </LinearLayout>
+

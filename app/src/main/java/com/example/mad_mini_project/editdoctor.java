@@ -1,8 +1,10 @@
 package com.example.mad_mini_project;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
@@ -21,6 +23,7 @@ public class editdoctor extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editdoctor);
+
 
         ed1 = findViewById(R.id.name);
         ed2 = findViewById(R.id.specialization);
@@ -43,12 +46,21 @@ public class editdoctor extends AppCompatActivity {
         ed2.setText(t3);
         ed3.setText(t4);
 
-        b2.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+        b2.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
+
                 Delete();
             }
         });
+
+
+
 
 
         b3.setOnClickListener(new View.OnClickListener() {
@@ -74,27 +86,29 @@ public class editdoctor extends AppCompatActivity {
 
     }
 
-    public void Delete()
+   public void Delete()
+
     {
-        try
+       try
+
         {
+
             String id = ed4.getText().toString();
-
             SQLiteDatabase db = openOrCreateDatabase("hospitalDB",Context.MODE_PRIVATE,null);
-
 
             String sql = "delete from records where id = ?";
             SQLiteStatement statement = db.compileStatement(sql);
 
             statement.bindString(1,id);
             statement.execute();
-            Toast.makeText(this,"Record Deleted",Toast.LENGTH_LONG).show();
+
+           Toast.makeText(this,"Record Deleted",Toast.LENGTH_LONG).show();
 
 
-            ed1.setText("");
-            ed2.setText("");
-            ed3.setText("");
-            ed1.requestFocus();
+          ed1.setText("");
+          ed2.setText("");
+          ed3.setText("");
+          ed1.requestFocus();
 
 
         }
@@ -103,7 +117,10 @@ public class editdoctor extends AppCompatActivity {
             Toast.makeText(this,"Record Fail",Toast.LENGTH_LONG).show();
         }
     }
+
+
     public void Edit()
+
     {
         try
         {
@@ -122,7 +139,7 @@ public class editdoctor extends AppCompatActivity {
             statement.bindString(3,ContactNo);
             statement.bindString(4,id);
             statement.execute();
-            Toast.makeText(this,"Record added",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Record updated!",Toast.LENGTH_LONG).show();
 
             ed1.setText("");
             ed2.setText("");
@@ -135,4 +152,7 @@ public class editdoctor extends AppCompatActivity {
             Toast.makeText(this,"Record Fail",Toast.LENGTH_LONG).show();
         }
     }
+
+
+
 }

@@ -4,4 +4,7 @@
     <string name="dose">dose</string>
     <string name="description">description</string>
     <string name="Quantity">Quantity</string>
+    <string name="backhome">backhome</string>
+    <string name="invalid_name">Please enter a valid name</string>
+    <string name="invalid_ContactNo">Please enter a valid contact Number</string>
 </resources>

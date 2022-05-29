@@ -43,6 +43,9 @@ public class UpdateActivity extends AppCompatActivity {
             mydb.updateData(id, name, contact, ward);
 
         });
+
+
+
         del_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
